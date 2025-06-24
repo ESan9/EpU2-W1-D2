@@ -8,13 +8,17 @@
       content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/font-awesome.css" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
@@ -51,19 +55,21 @@
     <main>
       <article>
         <h1>Come creare un template per i post</h1>
+        <img id="underline" src="./assets/img/underline.svg" />
         <p>
           <i class="fas fa-pen-square"></i> di Mario Rossi -
           <span><i class="fas fa-clock"></i> pubblicato il 25-10-2020</span>
         </p>
-        <img id="firstImg" src="./assets/img/badge.png" alt="SLogo" />
+        <div id="divfloat">
+          <img id="firstImg" src="./assets/img/badge.png" alt="SLogo" />
 
-        <p>
-          La prima cosa da fare è suddividere in blocchi logici la pagina,
-          identificando le <strong>parti comuni</strong> da applicare a tutte le
-          pagine
-        </p>
-
-        <p>Le varie aree saranno quindi suddivise in:</p>
+          <p id="firstp">
+            La prima cosa da fare è suddividere in blocchi logici la pagina,
+            identificando le <strong>parti comuni</strong> da applicare a tutte
+            le pagine
+          </p>
+        </div>
+        <p id="endfloat">Le varie aree saranno quindi suddivise in:</p>
         <ul>
           <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
           <li>
@@ -215,10 +221,16 @@
         </div>
       </aside>
     </main>
-
-    <hr />
-
     <footer>
+      <div class="btts">
+        <a href="#" class="button"><i class="fa fa-plus-square"></i></a>
+      </div>
+      <div class="btts">
+        <a href="#" class="button"><i class="fa fa-calendar"></i></a>
+      </div>
+      <div class="btts">
+        <a href="#" class="button"><i class="fa fa-caret-square-o-up"></i></a>
+      </div>
       <p>Blog Epicode &copy;2021</p>
       <address>
         Testata online di Mario Rossi, registrata con prot. n.213/2018 - via
